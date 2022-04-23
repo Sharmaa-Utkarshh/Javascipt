@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events And Listeners</title>
+    <style>
+        .btn{
+            cursor: pointer;
+            border: 2px solid black;
+            background-color: yellow;
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Para Show and Hide</h1>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto voluptatem deserunt? Impedit molestias, pariatur tempora voluptates maiores veniam quis!
+    </p>
+    <button type="button" class="btn" onclick="CLICKFUNC()">Show/Hide</button>
+    <script>
+        let x= document.getElementById("para");
+        x.addEventListener("mouseover", function Run(){
+            console.log("Mouse Inside");
+        })
+        x.addEventListener("mouseout", function Run1(){
+            console.log("Mouse Outside");
+        })
+        function CLICKFUNC(){
+            let x= document.getElementById("para");
+            if(x.style.display != "none"){
+                x.style.display="none";
+            }
+            else{
+                x.style.display="block";
+            }
+        }
+    </script>
+</body>
+</html>

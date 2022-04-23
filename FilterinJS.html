@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <script>
+        //Syntax very similar to map
+        const arr= [1,2,3,4,5,6,7,8,9,10];
+        const Filterarray= arr.filter((num)=>{
+            return num>2 && num<7; //Pushes all the elements that are greater than 2 and less than 7 into the filteraray
+            //Since we are filtering out the elements by giving a condition
+            //hence it's called a filterarray
+        })
+        console.log(Filterarray);
+
+        //When we give some conditions we use filter but when we have to map the elements of first into second by any mathmatics in between then we use map
+        
+    </script>
+</body>
+</html>

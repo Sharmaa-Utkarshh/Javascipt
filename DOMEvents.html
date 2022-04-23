@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Event is just like a signal -->
+    <h1 class="example" id="h23">Courses to Study</h1>
+    <ul>
+      <li>Javascript</li>
+        <li>Blockchain</li>
+        <li>Ethereum</li>
+        <li>Solidity</li>
+        <li>Hardhat/Truffle</li>
+     </ul>
+     <form action="">
+         <input type="text" placeholder="Write what you want to make the heading" class="inp" id="h21">
+
+         <button type="submit" onclick="func()" > Submit</button>
+     </form>
+
+     <script>
+         function func(){
+             let x= document.getElementById("h23");
+            let y= document.getElementById("h21");
+            x.innerHTML=y.value;
+         }
+         
+     </script>
+</body>
+</html>

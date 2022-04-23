@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASync and Sync JS</title>
+</head>
+<body>
+    <script>
+        //How JS works part 2:
+        console.log(1);
+        console.log(2);
+        console.log(3);
+        //All three operate in sync first 1 then 2 then 3
+        //now,
+        console.log(1);
+        setTimeout(()=>{
+            console.log(2);
+        },2000); //This will run after 2000 miliseconds
+        console.log(3);
+
+
+        //Very imp: JS engine works as follows:
+        // 1. first it will give preference to events that deserve call stack (timeout exclude) ==> This means even if we set timer to 0 it will be called at last (later than normal events)
+        // 2. Next it will give preference to WEB APIs 
+        // 3. Next preference to callback queues.
+
+        
+        
+    </script>
+</body>
+</html>

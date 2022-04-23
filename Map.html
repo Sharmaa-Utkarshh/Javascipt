@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map in JS</title>
+</head>
+<body>
+    <script>
+        const arr= [1,2,3,4];
+        //Now I want to make an array which have 2,3,4,5 means +1 in every element of above arr
+        //For this we use map
+        const maparr= arr.map((i)=>{
+           return i*2;
+        })  //This will iterate till arr ends
+        console.log(maparr);
+        //we can also do the above thing using for each command
+        const doub=[];
+        arr.forEach(function(i){
+            doub.push(i*2);
+        })
+        console.log(doub);
+    </script>
+</body>
+</html>

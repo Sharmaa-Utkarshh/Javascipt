@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAllback function in JS</title>
+</head>
+<body>
+    <h1 id="head">Paragraph</h1>
+    <script>
+        //When a function is called as parameter of other function. That time it is called callback
+      const disp= (sum)=>{
+          document.getElementById("head").innerHTML=sum;
+      }
+      function sum2(x,y){
+          return sum1= x+y;
+          disp(sum1);
+      }
+
+    //   Other way to write above code is
+
+    const sum= (x,y, disp= (sum)=>{
+          document.getElementById("head")=sum;
+      })=>{
+          return summit= x+y;
+          display(summit);
+
+      }
+      sum(5,10);
+      sum2(5,10);
+
+
+      //Many functions in callback when used makes a callback hell. To tackle this problem we have promises in JS
+    </script>
+</body>
+</html>
